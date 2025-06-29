@@ -1,14 +1,97 @@
+# 🔐 AuthFlow - Firebase Authentication App
+
+A modern authentication app built using **React.js**, **Firebase Auth**, and **Tailwind CSS**. AuthFlow offers clean UI and user-friendly components for sign up, login, and dashboard access with secure authentication flow.
+
+## 🌐 Live Demo
+
+https://authentication-firebase-chi.vercel.app/
+
+---
+
+## 🚀 Features
+
+- User Sign Up with Firebase Authentication
+- Secure Login with Firebase Auth
+- Real-time Auth State Monitoring
+- Password strength indicator
+- Password visibility toggles
+- Protected Dashboard
+- Responsive UI with Tailwind CSS
+- Custom error handling & feedback messages
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** React.js (with Vite)
+- **Styling:** Tailwind CSS
+- **Auth:** Firebase Authentication
+- **Routing:** React Router v6
+
+---
+
+## 📁 Project Structure
+
+```
+authentication/
+├── public/
+│ └── logo.png
+├── src/
+│ ├── config.js # Firebase configuration
+│ ├── App.jsx # Main routing component
+│ ├── Home.jsx # Dashboard after login
+│ ├── Login.jsx # Login form
+│ ├── Signup.jsx # Signup form with validation
+│ ├── index.css # Tailwind base styles
+│ └── main.jsx # React entry point
+├── .env # Firebase keys (secured)
+├── package.json
+├── vite.config.js
+└── README.md
+```
 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+## 🔐 Environment Variables
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Create a `.env` file in the root with your Firebase config:
 
-## Expanding the ESLint configuration
+```env
+VITE_FIREBASE_API_KEY=your_api_key
+VITE_FIREBASE_AUTH_DOMAIN=your_project.firebaseapp.com
+VITE_FIREBASE_PROJECT_ID=your_project_id
+VITE_FIREBASE_STORAGE_BUCKET=your_project.appspot.com
+VITE_FIREBASE_MESSAGING_SENDER_ID=your_messaging_id
+VITE_FIREBASE_APP_ID=your_app_id
+VITE_FIREBASE_MEASUREMENT_ID=your_measurement_id
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
+🧩 Installation & Setup
+1.Clone the repo
+  https://github.com/Vishwanathangit/Authentication---Firebase.git
+  cd authentication
+2.Install dependencies
+  npm install
+3.Add environment variables
+  Create .env file in the root directory and add your Firebase keys.
+4.Start the development server
+  npm run dev
 
+🧠 Learnings
+Firebase Auth integration with React
+
+Managing auth state with onAuthStateChanged
+
+Routing protection with React Router
+
+Dynamic form validation and UI feedback
+
+📌 Todos
+Add Google / GitHub OAuth login
+
+Add password reset functionality
+
+Add route guards (private routes)
+
+Deploy on Vercel
