@@ -78,7 +78,7 @@ VITE_FIREBASE_MEASUREMENT_ID=your_measurement_id
 4.Start the development server
   npm run dev
 
-🧠 Learnings
+## 🧠 Learnings
 Firebase Auth integration with React
 
 Managing auth state with onAuthStateChanged
@@ -87,7 +87,7 @@ Routing protection with React Router
 
 Dynamic form validation and UI feedback
 
-📌 Todos
+## 📌 Todos
 Add Google / GitHub OAuth login
 
 Add password reset functionality
